@@ -1,0 +1,54 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+
+header{
+    height: 150px;
+    background-color: rgb(245, 111, 77);
+}
+
+
+div{
+    display: flex;
+    flex: 1;
+}
+
+main{
+    flex: 1;
+    background-color: rgb(255, 218, 68);
+}
+
+nav{
+    width: 150px;
+    background-color: rgb(59, 192, 218);
+}
+
+aside{
+    width: 200px;
+    background-color: rgb(59, 218, 165);
+}
+
+footer{
+    background-color: rgb(251, 181, 247);
+    height: 200px;
+}
+
+@media screen and (max-width: 900px){
+    body,
+    nav,
+    aside{
+        width: 100%;
+    }
+
+    div{
+        flex-direction: column;
+    }
+
+    main{
+        order: -1;
+    }
+}
